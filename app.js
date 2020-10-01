@@ -19,7 +19,7 @@ const alerts = () => {
   msg.style.display = "block";
   setTimeout(() => {
     msg.style.display = "none";
-  }, 500);
+  }, 1000);
 };
 
 const time = () => {
@@ -28,7 +28,7 @@ const time = () => {
     alert("Enter Your Minutes");
   } else {
     alerts();
-    min = document.getElementById("set_min").value * 5000;
+    min = document.getElementById("set_min").value * 10000;
     setTimeout(() => {
       show();
     }, min);
