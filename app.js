@@ -28,7 +28,7 @@ const time = () => {
     alert("Enter Your Minutes");
   } else {
     alerts();
-    min = document.getElementById("set_min").value * 10000;
+    min = document.getElementById("set_min").value * 60000;
     setTimeout(() => {
       show();
     }, min);
