@@ -5,21 +5,38 @@
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>Document</title>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
      <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-     <button>click me</button>
-
-     <div class="popup-wrapper">
-          <div class="popup">
-               <div class="popup-close">x</div>
-               <div class="popup-content">
-                    <h2>Hello Popup</h2>
-                    <P>Here’s the CSS that goes along with that kind of thinking.</P>
-                    <a href="https://www.google.com/">view here</a>
+     <audio id="myAudio">
+          <source src="./mp3/chuong.mp3" type="audio/mpeg">
+     </audio>
+     <div class="container">
+          <div class="clock">
+               <span id="hour"></span>
+               <span id="minute"></span>
+               <span id="second"></span>
+          </div><br><br>
+          <div>
+               <span>set minute</span>
+               <input type="number" name="min" id="set_min">
+               <div class="container">
+                    <button onclick="time()">set time</button>
                </div>
           </div>
+     </div>
+     <div class="wrap">
+          <div class="popup">
+               <h2><i class="fa fa-clock-o" aria-hidden="true"></i></h2>
+               <h3>Let's Relax</h3>
+          </div>
+     </div>
+
+     <div class="msg">
+          <h2><i class="fa fa-check-circle msg-check" aria-hidden="true"></i></h2>
+          <p class="savetime">Save Time</p>
      </div>
 
      <script src="app.js"></script>
